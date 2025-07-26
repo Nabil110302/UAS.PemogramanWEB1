@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore SulSel</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+     
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <h2 class="logo-text"><i class="fa-solid fa-tree-city"></i> Sulsel</h2>
+        </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="Adventure.html" class="nav-link">Adventure</a>
+          </li>
+          <li class="nav-item">
+            <a href="Testimonials.html" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="Galery.html" class="nav-link">Gallery</a>
+          </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">EXPLORE SULAWESI SELATAN</h2>
+            <h3 class="subtitle">LET'S START OUR JOURNEY IN THE CENTER OF INDONESIA!</h3>
+            <p class="description">Welcome to our adventure, where everything we do has meaning.</p>
+            <div class="buttons">
+              <a href="#about" class="button order-now">About Us</a>
+              <a href="#contact" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="images/mountain.png" alt="Coffee" class="hero-image" />
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="images/nabil.JPG" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">Explore Sulawesi Selatan adalah platform yang menyajikan pesona alam Sulsel, dari megahnya Gunung Latimojong, sejuknya Mallette Highland, hingga eksotisnya Pegunungan Karst Rammang-Rammang. Kami hadir untuk mengajak Anda menjelajahi keindahan alam yang belum banyak terungkap, serta mendukung pariwisata lokal yang berkelanjutan.</p>
+            
+          </div>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>Makassar, Sulawesi Selatan</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@exploremakassar.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>082365255847</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Open Everyday</p>
+            </li>
+            </li>
+          </ul>
+          <form action="#" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+          <script>
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function(event) {
+              event.preventDefault();
+              alert("Tersimpan");
+              form.reset();
+            })
+          </script>
+        </div>
+      </section>
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2025 Explore SulSel</p>
+          <div class="social-link-list">
+            <a href="https://www.linkedin.com/in/nabil-fakhrezy" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/nabilfakhrezy" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://web.whatsapp.com/62365255847" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
